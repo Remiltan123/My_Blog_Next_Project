@@ -4,7 +4,7 @@ export default function Home() {
   return (
        <>
          <div className="container">
-           Home
+           <h1>Home</h1>
          </div>
        </>
   );
