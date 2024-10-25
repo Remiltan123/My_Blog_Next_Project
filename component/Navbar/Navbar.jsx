@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import  styles from './navbar.module.css'
+import ToggleDark from '../ToggleDarkContext/ToggleDarkContext'
 
 export const Navbar = () => {
 
@@ -43,6 +44,7 @@ export const Navbar = () => {
         <Link href="/" className={styles.logo}>Remi Start</Link>
 
         <div className={styles.links}>
+          <ToggleDark/>
           {links.map((link,index)=>
              <Link key={index} href={link.url}>{link.title}</Link>
           )}
